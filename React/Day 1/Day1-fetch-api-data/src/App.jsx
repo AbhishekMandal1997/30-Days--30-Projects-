@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';  // Make sure this file exists for styling
+import './App.css';  
 
 function App() {
   const [data, setData] = useState(null);
@@ -19,7 +19,7 @@ function App() {
       }
       
       const result = await response.json();
-      setData(result);  // Set the fetched data directly
+      setData(result);  
       setLoading(false);
     } catch (error) {
       setError(error.message);
